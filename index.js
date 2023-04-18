@@ -34,6 +34,8 @@ async function getJoke(){
 } catch (error) {
 
     jokeElement.innerText = "An error occured try again later..."
+    button.disabled = false
+    button.innerText = "Tell Me A Joke"
     console.log(error)
 }
 }
